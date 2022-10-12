@@ -1,0 +1,8 @@
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/variables';
+
+.feature{
+    @include media-breakpoint-down(lg){
+        text-align: center;   
+    }
+}

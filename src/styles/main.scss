@@ -1,0 +1,22 @@
+// Include any default variable overrides here (though functions won't be available)
+@import "./override-variables";
+@import "bootstrap/scss/bootstrap";
+// Then add additional custom code here
+
+option{
+    background-color: black !important;
+    &:hover{
+        background-color: red !important;
+    }
+}
+// START CUSTOM COMPONENTS
+
+// END CUSTOM COMPONENTS
+
+// START LAYOUT SECTION
+@import './sections/faq';
+@import './sections/features';
+@import './sections/footer';
+@import './sections/hero';
+@import './sections/navbar';
+// END LAYOUT 
