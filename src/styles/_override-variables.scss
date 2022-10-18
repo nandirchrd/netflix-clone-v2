@@ -1,0 +1,54 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/mixins';
+
+// CUSTOM COLORS
+$primary: #e50914;
+$secondary: #0071eb;
+$dark: #333333;
+
+$small-font-size: 0.5em;
+
+@import 'bootstrap/scss/variables';
+$custom-theme: (
+    "black": #000,
+    "grey": #696969
+);
+$theme-colors: map-merge($custom-theme, $theme-colors);
+
+$form-select-font-size: 20px;
+$form-select-color:#999999;
+$form-select-bg: transparent;
+$form-select-indicator-color:#999999;
+$form-select-font-size-sm: 0.5em;
+$form-select-focus-width:0;
+$form-select-focus-box-shadow: none;
+$form-select-focus-border-color:  '$white';
+$form-select-focus-box-shadow: 0 0 0 $form-select-focus-width#999999;
+$form-select-border-width: 1;
+$form-select-border-color:#999999;
+$form-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>");
+
+$custom-border-width: (
+  "line": 10px
+);
+
+$border-widths: map-merge($border-widths, $custom-border-width);
+
+
+$accordion-button-padding-y:  0.5rem;
+$accordion-button-padding-x: 1rem;
+$accordion-color:                         $white;
+$accordion-bg:                            $dark;
+$accordion-border-width:                  0;
+$accordion-button-color:                  $accordion-color;
+$accordion-button-bg:                     $accordion-bg;
+$accordion-button-focus-border-color:     none;
+$accordion-button-focus-box-shadow:       none;
+$accordion-icon-width:                    2rem;
+$accordion-button-active-bg:              none;
+$accordion-button-active-color:           $white;
+$accordion-icon-color:                    $accordion-color;
+$accordion-icon-active-color:             $accordion-button-active-color;
+
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");

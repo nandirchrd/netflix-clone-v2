@@ -1,0 +1,69 @@
+// Include any default variable overrides here (though functions won't be available)
+@import "./override-variables";
+@import "bootstrap/scss/bootstrap";
+// Then add additional custom code here
+body{
+    background-color: 'black' !important;
+    height: 100vh !important;
+    width: '100%' !important;
+    overflow-x: hidden !important;
+}
+option{
+    background-color: black !important;
+    &:hover{
+        background-color: red !important;
+    }
+}
+a{
+    text-decoration: none !important;
+}
+.movies{
+    height: 200px
+}
+.pointer{
+    cursor: pointer !important;
+}
+.z-1{
+    z-index: 1;
+}
+.z-2{
+    z-index: 2;
+}
+.z-3{
+    z-index: 3;
+}
+.category::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 1.2em;
+    bottom: 0.2em;
+    box-shadow: inset 4px 0 6px #000, inset -4px 0 6px #000;
+}
+.movies::-webkit-scrollbar{
+    height: 3px;
+    background: transparent;
+}
+.movies::-webkit-scrollbar-thumb{
+    border-radius: 0.2em;
+    background-color: $primary;
+}
+.movie{
+    cursor: pointer !important;
+}
+.movie-poster{
+    transition: 500ms linear;
+}
+.movie-poster:hover{
+    scale: 1.05;
+}
+// END CUSTOM COMPONENTS
+
+// START LAYOUT SECTION
+@import './sections/faq';
+@import './sections/features';
+@import './sections/footer';
+@import './sections/hero';
+@import './sections/navbar';
+// END LAYOUT 

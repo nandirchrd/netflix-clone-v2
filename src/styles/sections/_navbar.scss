@@ -1,0 +1,11 @@
+@import 'bootstrap/scss/mixins';
+@import 'bootstrap/scss/variables';
+
+.logo{
+    @include media-breakpoint-down(sm){
+        transform: scale(0.7);
+    }
+    @include media-breakpoint-up(md){
+        transform: scale(1.2);
+    }
+}
