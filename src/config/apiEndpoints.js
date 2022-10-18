@@ -1,5 +1,5 @@
 import { themeMovieDB as baseUrl } from '../constants/url';
-const API_KEY = process.env.API_KEY;
+const API_KEY = 'e0aa5f2716e63c07b1188fbb65f4454b';
 
 export const movies = {
 	netflix:
