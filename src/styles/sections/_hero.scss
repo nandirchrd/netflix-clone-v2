@@ -2,6 +2,7 @@
 @import 'bootstrap/scss/variables';
 
 .hero{
+    min-height: 20rem;
     @include media-breakpoint-up(sm) {
        height: 90vh;
     }

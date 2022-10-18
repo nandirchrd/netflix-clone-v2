@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import Button from '../components/Button';
 import Logo from '../components/Logo';
-import Select from '../components/Select';
 import NotFoundContext from '../context/NotFoundContext';
+import { FaHome } from 'react-icons/fa';
 
 const Navbar = () => {
 	const { value } = useContext(NotFoundContext);
@@ -18,9 +17,12 @@ const Navbar = () => {
 				</div>
 				{!value && (
 					<div className='d-flex'>
-						<Select className='me-2 d-none d-md-block' />
+						{/* <Select className='d-none d-md-block' /> */}
 						<Link to='/home'>
-							<Button type='sm'>Sign In</Button>
+							<button className='btn btn-sm text-white d-flex align-items-center'>
+								<FaHome className='me-1' />
+								Home
+							</button>
 						</Link>
 					</div>
 				)}

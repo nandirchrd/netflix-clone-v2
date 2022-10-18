@@ -3,10 +3,10 @@ import React from 'react';
 const Select = ({ className }) => {
 	return (
 		<select className={`form-select form-select-sm ${className}`}>
-			<option className='small' selected value='english'>
+			<option className='' value='english'>
 				English
 			</option>
-			<option className='small' value='indonesia'>
+			<option className='' value='indonesia'>
 				Indonesia
 			</option>
 		</select>

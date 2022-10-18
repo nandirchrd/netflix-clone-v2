@@ -4,6 +4,8 @@ import TV from '../assets/images/tv.png';
 import Mobile from '../assets/images/mobile.jpg';
 import Device from '../assets/images/device.png';
 import Kids from '../assets/images/kids.png';
+import Downloading from '../assets/gif/download-icon.gif';
+import Poster from '../assets/images/boxshot.png'
 
 const Landing = () => {
 	return (
@@ -17,7 +19,7 @@ const Landing = () => {
 					backgroundRepeat: 'no-repeat',
 					backgroundPosition: 'center',
 					boxShadow:
-						'inset 0px 900px 0px rgba(0,0,0,0.4), inset 0 50px 150px #000, inset 0 -50px 150px #000',
+						'inset 0px 900px 0px rgba(0,0,0,0.4), inset 0 50px 150px #000, inset 0 -50px 150px #000, inset 0 -5px 10px #000',
 				}}>
 				<div className='container-md'>
 					<div className='py-5 text-center mt-5 row justify-content-center'>
@@ -73,8 +75,25 @@ const Landing = () => {
 								something to watch.
 							</p>
 						</div>
-						<div className='col-lg-5 order-lg-1'>
+						<div className='col-lg-5 order-lg-1 position- d-flex justify-content-center align-items-end'>
 							<img src={Mobile} alt='tv' className='w-100' />
+							<div 
+								className='position-absolute d-flex align-items-center justify-content-between bg-black col-8 col-sm-6 col-lg-4 col-xl-3 mb-3 border border-3 border-dark p-1 rounded'>
+								<img
+									src={Poster}
+									width={50}
+									alt='tv'
+								/>
+								<div className='d-flex justify-content-center flex-column'>
+									<span className='small fs-6 fw-bold'>Strange things</span> 
+									<span className='small'>Downloading...</span>
+								</div>
+								<img
+									src={Downloading}
+									alt='tv'
+									width={50}
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
